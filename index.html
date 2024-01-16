@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASISTEC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+</head>
+<body>
+  <header>
+    <h1>ASISTEC</h1>
+    <nav>
+      <button onclick="mostrarProductos()">Productos Locales</button>
+      <button onclick="cargarProductosDesdeAPI()">Cargar Productos desde API</button>
+      <button onclick="buscarMarcas()">Buscar Marcas</button>
+      <button onclick="mostrarCarrito()">Ver Carrito</button>
+    </nav>
+  </header>
+
+  <section id="contenido">
+    <!-- Contenido dinámico se mostrará aquí -->
+    <ul id="listaRepuestos" style="display: none;"></ul>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="main.js"></script>
+</body>
+</html>
